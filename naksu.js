@@ -3,15 +3,15 @@
 // findlongestword
 
 // function flw(arr) {
-//     let max=arr[0].length
-//     for (const i of arr) {
-//         if (i.length>max) {
-//             max=i
+//     let max=arr[0]
+//     for (let i = 1; i < arr.length; i++) {
+//         if (max.length<arr[i].length) {
+//             max=arr[i]
 //         }
 //     }
 //     return max
 // }
-// console.log(flw(["let","meeeeen","u"]));
+// console.log(flw(["let","meeeeen","uuuuuuuuuuu"]));
 
 
 //n2
@@ -36,8 +36,19 @@
 
 //unique
 
-// const uniqueNumbers = new Set(["olma","anor","olma"]);
+// function findUniqueWords(str) {
+//     let newArr=[...new Set(str.split(" "))]
+//     return newArr
+// }
+// console.log(findUniqueWords("apple banana apple orange grape"));
 
-// console.log(uniqueNumbers); 
 
+//n4
 
+// format number
+
+// function formatPhNum(arr) {
+//     let newStr=""
+//     return newStr="("+arr[0]+arr[1]+arr[2]+")"+" "+arr[3]+arr[4]+arr[5]+"-"+arr[6]+arr[7]+arr[8]
+// }
+// console.log(formatPhNum([1,2,3,4,5,6,7,8,9,0]));
